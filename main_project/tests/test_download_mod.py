@@ -56,6 +56,7 @@ def download_mod():
     file_path = path + file_name
     assert os.access(file_path, os.F_OK) == True
     print('Файл скачен')
+    os.remove(file_path)
 
 if __name__ == '__main__':
     download_mod()
